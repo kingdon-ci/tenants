@@ -1,0 +1,7 @@
+kubeconfig
+secrets.yaml
+talosconfig
+harvey-kubeconfig.yaml
+test-kubeconfig.yaml
+mo*-kubeconfig.yaml
+*-kubeconfig.yaml
