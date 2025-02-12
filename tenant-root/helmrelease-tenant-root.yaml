@@ -1,6 +1,8 @@
 apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
+  annotations:
+    reconcile.fluxcd.io/forceAt: "2025-02-11T19:29:23Z"
   labels:
     cozystack.io/ui: "true"
   name: tenant-root
@@ -14,7 +16,7 @@ spec:
         kind: HelmRepository
         name: cozystack-apps
         namespace: cozy-public
-      version: 1.6.7
+      version: '*'
   dependsOn:
   - name: cilium
     namespace: cozy-cilium
