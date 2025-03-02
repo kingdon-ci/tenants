@@ -126,10 +126,15 @@ The `netmoom` file server also has a secondary interface, on the 13-subnet:
 ├── redis-test-lb.turkey.local (10.17.13.242)
 ├── redis-live-lb.turkey.local (10.17.13.243)
 ├── kube.turkey.local (10.17.13.244) - LoadBalancer
+├── [unassigned] (10.17.13.245) ...
+├── [unassigned] (10.17.13.246) ...
+├── [unassigned] (10.17.13.247) ...
+├── [unassigned] (10.17.13.248) - LoadBalancer
+├── metnoom.turkey.local (10.17.13.250) - pi-hole Secondary DNS (on `metnoom`)
 ├── matchbox.turkey.local (10.17.13.251) - Docker hosted on `netmoom`
 ├── dnsmasq.turkey.local (10.17.13.252) - Docker hosted on `netmoom`
 ├── talos-dev-planevip.turkey.local (10.17.13.253) - cozystack Kubernetes VIP
-├── netmoom.turkey.local (10.17.13.254) - pi-hole DNS (on `netmoom`)
+├── netmoom.turkey.local (10.17.13.254) - pi-hole Primary DNS (on `netmoom`)
 └── mikrotika-13net.turkey.local (10.17.13.249) - GW
 ```
 
